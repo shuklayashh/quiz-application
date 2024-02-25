@@ -145,22 +145,22 @@ function App() {
       },
       {
         id: 7,
-      question: "Who wrote the famous novel To Kill a Mockingbird?",
+      question: "What is the chemical symbol for gold",
       answers: [
         {
-          text: "Venus",
+          text: "Ag",
           correct: false,
         },
         {
-          text: "Mars",
+          text: "Hi",
+          correct: false,
+        },
+        {
+          text: "Au",
           correct: true,
         },
         {
-          text: "Sun",
-          correct: false,
-        },
-        {
-          text: "Pluto",
+          text: "Zn",
           correct: false,
         },
       ],
