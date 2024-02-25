@@ -19,7 +19,7 @@ export default function Timer({ setTimeOut, questionNumber }) {
   }, [timer, setTimeOut, isActive]);
 
   useEffect(() => {
-    setTimer(3000);
+    setTimer(30);
     setIsActive(true); // Start the timer whenever questionNumber changes
   }, [questionNumber]);
 
