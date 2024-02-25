@@ -9,7 +9,6 @@ function App() {
   const [timeOut, setTimeOut] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [earned, setEarned] = useState("$ 0");
-
   const data = [
     {
       id: 1,
@@ -95,30 +94,30 @@ function App() {
         },
         {
           text: "Pluto",
-          correct: true,
+          correct: false,
         },
       ],
       },
 
       {
         id: 5,
-      question: "Who wrote the famous novel To Kill a Mockingbird?",
+      question: "who is the CM of Uttar Pradesh",
       answers: [
         {
-          text: "Venus",
-          correct: false,
-        },
-        {
-          text: "Mars",
+          text: "Yogi Adityanath",
           correct: true,
         },
         {
-          text: "Sun",
+          text: "Narendra Modi",
           correct: false,
         },
         {
-          text: "Pluto",
-          correct: true,
+          text: "Akhilesh Yadav",
+          correct: false,
+        },
+        {
+          text: "Lalu Yadav",
+          correct: false,
         },
       ],
       },
@@ -222,15 +221,16 @@ function App() {
           correct:false,
         },
         {
-          text: "Canberra",
-          correct: true,
+          text: "Perth",
+          correct: false,
         },
         {
           text: "Melbourne",
           correct: false,
         },
         {
-          text: "Perth",
+         
+          text: "Canberra",
           correct: true,
         },
       ],
@@ -246,7 +246,7 @@ function App() {
         },
         {
           text: "Ernest Hemingway",
-          correct: true,
+          correct: false,
         },
         {
           text: "F. Scott Fitzgerald",
@@ -264,20 +264,20 @@ function App() {
       question: "Which of the following is the longest river in the world?",
       answers: [
         {
+          text: "Ganga",
+          correct: false,
+        },
+        {
+          text: "Amazon",
+          correct: false,
+        },
+        {
           text: "Nile",
           correct: true,
         },
         {
-          text: "Amazon",
-          correct: true,
-        },
-        {
-          text: "Mississippi",
-          correct: false,
-        },
-        {
           text: "Yangtze",
-          correct: true,
+          correct: false,
         },
       ],
       },
@@ -287,63 +287,64 @@ function App() {
       question: "Who painted the famous artwork Starry Night?",
       answers: [
         {
-          text: "Vincent van Gogh",
-          correct: false,
-        },
-        {
-          text: "Pablo",
-          correct: true,
-        },
-        {
           text: "Leonardo da Vinci",
           correct: false,
         },
         {
-          text: "Claude Monet",
+          text: "Pablo",
+          correct: false,
+        },
+        {
+          
+          text: "Vincent van Gogh",
           correct: true,
+        },
+        {
+          text: "Claude Monet",
+          correct: false,
         },
       ],
       },
       {
-        id: 9,
-      question: "Who painted the famous artwork Starry Night?",
+        id: 14,
+      question: "Which famous physicist developed the theory of relativity",
       answers: [
         {
-          text: "Vincent van Gogh",
+          text: "Newton",
           correct: false,
         },
         {
-          text: "Pablo",
+          text: "Albert Einstein",
           correct: true,
         },
         {
-          text: "Leonardo da Vinci",
+          text: "Stephen Hawking",
           correct: false,
         },
         {
-          text: "Claude Monet",
-          correct: true,
+          text: " Niels Bohr",
+          correct: false,
         },
       ],
       },
       {
-        id: 9,
-      question: "Who painted the famous artwork Starry Night?",
+        id: 15,
+      question: "Which element is commonly used in balloons to make them float",
       answers: [
         {
-          text: "Vincent van Gogh",
+          text: "Oxygen",
           correct: false,
         },
         {
-          text: "Pablo",
-          correct: true,
-        },
-        {
-          text: "Leonardo da Vinci",
+          text: "Hydrogen",
           correct: false,
         },
         {
-          text: "Claude Monet",
+          text: "Nitrogen",
+          correct: false,
+        },
+        {
+          text: "Helium",
           correct: true,
         },
       ],
@@ -373,6 +374,7 @@ function App() {
     []
   );
 
+ 
   useEffect(() => {
     questionNumber > 1 &&
       setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
